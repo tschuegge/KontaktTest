@@ -9,6 +9,7 @@ export class AppComponent {
   contacts = [
     'Peter,Muster,Musterstadt',
     'Thomas,Muster,Musterhausen',
-    'Isabelle,Muster,Musterstadt'
+    'Isabelle, Muster, Musterstadt',
+    'Falsches Format'
   ];
 }

@@ -1,5 +1,8 @@
-<div>
-  <h2>{{vorname}} {{nachname}}</h2>
-  <p>{{ort}}</p>
-  <p><small>{{id}}</small></p>
+<div [class.parseerror]="parseError">
+  <p *ngIf="parseError">Kontakt konnte nicht dargestellt werden!</p>
+  <ng-container *ngIf="!parseError">
+    <h2>{{vorname}} {{nachname}}</h2>
+    <p>{{ort}}</p>
+    <p><small>{{id}}</small></p>
+  </ng-container>
 </div>
