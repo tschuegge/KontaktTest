@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'KontaktTest';
+  contacts = [
+    'Peter,Muster,Musterstadt',
+    'Thomas,Muster,Musterhausen',
+    'Isabelle,Muster,Musterstadt'
+  ];
 }

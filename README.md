@@ -1,27 +1,22 @@
-# KontaktTest
+KontaktTest
+===========
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+Für dieses Projekt sollen Unittests geschrieben werden.
 
-## Development server
+Anforderungen Kontaktanzeige
+----------------------------
+1. Die `KontaktComponent` stellt einen Kontakt dar
+2. Der `KontaktComponent` kann der darzustellende Kontakt über das Attribute `kontakt` als String im folgenden Format übergeben werden: `[vorname],[nachname],[ort]` (bspw: `Peter,Muster,Musterstadt`)
+3. Falls der `kontakt`-String im falschen Format übergeben wurde, wird eine Fehlermeldung angezeigt
+4. Leerzeichen vor oder hinter einem Wert (Vorname, Nachname oder Ort) werden entfernt
+5. Beim Anzeigen eines neuen Kontakts wird jedesmal eine eindeutige ID zugewiesen und angezeigt
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Anforderungen UniqueIdGenerator
+-------------------------------
+1. Der UniqueIdGenerator ist eine eingekaufte Bibliothek, welche direkt in das Projekt eingebunden wurde
+2. Der UniqueIdGenerator besitzt eine statische Methode (`generateId(prefix: string)`) bei der optional ein Präfix mitgegeben werden kann, der der generierten ID vorangestellt wird
+3. Die generierten ID's bestehen nur als Gross- und Kleinbuchstaben und Ziffern und sind immer 10 Zeichen lang (ohne Präfix)
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Aufgabe
+-------
+Alle Anforderungen müssen getestet werden.
