@@ -15,7 +15,7 @@ Anforderungen UniqueIdGenerator
 -------------------------------
 1. Der UniqueIdGenerator ist eine eingekaufte Bibliothek, welche direkt in das Projekt eingebunden wurde
 2. Der UniqueIdGenerator besitzt eine statische Methode (`generateId(prefix: string)`) bei der optional ein Präfix mitgegeben werden kann, der der generierten ID vorangestellt wird
-3. Die generierten ID's bestehen nur als Gross- und Kleinbuchstaben und Ziffern und sind immer 10 Zeichen lang (ohne Präfix)
+3. Die generierten ID's bestehen nur als Gross- und Kleinbuchstaben und Ziffern und sind immer 8 Zeichen lang (ohne Präfix)
 
 Aufgabe
 -------
