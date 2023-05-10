@@ -5,15 +5,10 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Launch Chrome against Unit Tests",
       "type": "chrome",
-      "request": "attach",
-      "name": "Attach to Chrome for Karma",
-      "port": 9222,
-      "webRoot": "${workspaceFolder}",
-      "pathMapping": {
-        "/": "${workspaceRoot}",
-        "/base/": "${workspaceRoot}/"
-      }
+      "request": "launch",
+      "url": "http://localhost:9876/debug.html"
     },
     {
       "type": "chrome",
